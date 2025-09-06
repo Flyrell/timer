@@ -1,0 +1,11 @@
+# OS Files
+.DS_Store
+
+# IDE
+.idea/
+
+# Built
+dist/
+
+# Node modules
+node_modules/
