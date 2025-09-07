@@ -3,4 +3,6 @@ export interface Config {
     minDelay: number;
     maxDelay: number;
     timeout: number;
+
+    maxHistorySize: number;
 }

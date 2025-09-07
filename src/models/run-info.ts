@@ -1,8 +1,18 @@
-export interface RunInfo {
+interface SuccessRunInfo {
     id: string;
-    delay: number;
-    startedAt?: number;
-    displayedAt?: number;
-    reactedAt?: number;
-    reactionTime?: number;
+    status: 'success';
+    reactionTime: number; // in ms
 }
+
+interface ErrorRunInfo {
+    id: string;
+    status: 'error';
+    reactionTime: number; // in ms (how much too soon)
+}
+
+interface TimeoutRunInfo {
+    id: string;
+    status: 'timeout';
+}
+
+export type RunInfo = SuccessRunInfo | ErrorRunInfo | TimeoutRunInfo;

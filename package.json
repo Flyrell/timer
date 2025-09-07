@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "bun index.html",
-    "build": "bun build bun.ts",
+    "build": "bun bun.ts",
     "lint": "biome check"
   },
   "devDependencies": {
